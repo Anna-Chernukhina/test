@@ -111,3 +111,38 @@ Pages, у гілку `gh-pages`, щоразу, коли оновлюється �
 3. Якщо всі кроки пройшли успішно, зібрана продакшн версія файлів проекту
    відправляється у гілку `gh-pages`. В іншому випадку, у лозі виконання скрипта
    буде вказано в чому проблема.
+
+Робота з картинками різного розміру
+
+picture>
+
+  <!-- Desktop screen -->
+
+  <source
+    media="(min-width: 1200px)"
+    srcset="./images/gallery/img-1_lg.jpg 1x, ./images/gallery/img-1_lg@2x.jpg 2x"
+    type="image/jpg"
+  />
+  <!-- Tablet screen -->
+
+  <source
+    media="(min-width: 768px)"
+    srcset="./images/gallery/img-1_md.jpg 1x, ./images/gallery/img-1_md@2x.jpg 2x"
+    type="image/jpg"
+  />
+  <!-- Mobile screen -->
+
+  <source
+    media="(max-width: 767px)"
+    srcset="./images/gallery/img-1_sm.jpg 1x, ./images/gallery/img-1_sm@2x.jpg 2x"
+    type="image/jpg"
+  />
+  <img
+    class="card-img"
+    src="./images/gallery/img-1_sm.jpg"
+    alt="Ноутбук"
+    width="450"
+    height="294"
+    loading="lazy"
+  />
+</picture>
